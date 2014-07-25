@@ -1,0 +1,32 @@
+.cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
+.cf:after, .cf:after {clear:both;}
+.cf, .cf {*zoom:1;}
+	
+	
+
+
+
+.imgmax {max-width: 100%; height: auto;}
+.post-title {font-size: 1.4em; color: #009688; }
+.post-meta {color: #666; font-size: .9em;}
+
+
+.img-head {
+	float: left; padding-bottom: 1em; background-color: #fff; width: 100%;
+	img {float: left; width: 100%; height: auto;}
+	}
+
+
+.navbar {
+	background-color: #fff; border-bottom: 1px solid #b2dfdb;
+	a.link {color: #009688;}
+	}
+
+ .logo {width: 40%; height: auto;}
+	
+.panel-left {
+	background-color: #009688; color: #fff;
+	.content-block-title {color: #fff;}
+	.content-block {color: #fff;}
+	a.item-link {color: #009688;}
+	}	
