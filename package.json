@@ -1,55 +1,57 @@
 {
-  "author": "David Kaneda",
-  "name": "jqt",
-  "description": "Create powerful mobile apps with just HTML, CSS, and Zepto.js (or jQuery).",
-  "version": "1.0.0",
-  "versionId": "",
+  "name": "Framework7",
+  "version": "0.9.3",
+  "description": "Full Featured HTML Framework For Building iOS 7 Apps",
+  "main": "dist/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/senchalabs/jQTouch.git"
+    "url": "https://github.com/nolimits4web/Framework7.git"
   },
-  "contributors": [
-    {
-      "name": "David Kaneda",
-      "email": "dk@morfunk.com"
-    },
-    {
-      "name": "Jonathan Stark"
-    },
-    {
-      "name": "Thomas Yip",
-      "email": "thomasleaf@gmail.com"
-    }
+  "keywords": [
+    "mobile", 
+    "framework", 
+    "ios 7", 
+    "ios7", 
+    "ios8", 
+    "ios 8", 
+    "iphone", 
+    "ipad", 
+    "apple", 
+    "phonegap", 
+    "native", 
+    "touch", 
+    "appstore", 
+    "app", 
+    "f7"
   ],
-  "licenses": [
-    {
-      "type": "MIT"
-    }
+  "author": "Vladimir Kharlampidi",
+  "license": [
+    "MIT"
   ],
+  "bugs": {
+    "url": "https://github.com/nolimits4web/Framework7/issues"
+  },
+  "homepage": "http://www.idangero.us/framework7/",
   "engines": {
-    "node": "~0.10"
+    "node": ">= 0.10.0"
   },
-  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-contrib": "~0.9.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-coffee": "~0.10.1",
-    "grunt-contrib-compass": "~0.7.2",
-    "grunt-contrib-compress": "~0.6.1",
+    "load-grunt-tasks": "~0.2.0",
+    "jshint": "~0.9",
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-qunit": "~0.4.0",
-    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-jade": "~0.9.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-coverjs": "~0.1.0",
-    "grunt-update-submodules": "~0.2.0"
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-connect": "~0.7.0",
+    "grunt-open": "~0.2.3",
+    "jshint-stylish": "~0.1.5",
+    "time-grunt": "~0.2.8"
   },
-  "optionalDependencies": {},
   "scripts": {
-    "test": "grunt test --verbose",
-    "prepublish": "grunt dist --verbose"
+    "test": "grunt test"
   }
 }

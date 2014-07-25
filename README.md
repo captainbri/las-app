@@ -1,101 +1,86 @@
-# jQT
+[![Stories in Ready](https://badge.waffle.io/nolimits4web/framework7.png?label=ready&title=Ready)](https://waffle.io/nolimits4web/framework7)
+[![Build Status](https://travis-ci.org/nolimits4web/Framework7.svg?branch=master)](https://travis-ci.org/nolimits4web/Framework7)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=nolimits4web&url=https://github.com/nolimits4web/framework7/&title=Framework7&language=JavaScript&tags=github&category=software)
 
-## Create powerful mobile apps with just HTML, CSS, and Zepto.js (or jQuery).
+Framework7
+==========
 
-[![Build Status](https://api.travis-ci.org/senchalabs/jQTouch.png?branch=master)](http://travis-ci.org/senchalabs/jQTouch)
+Full Featured HTML Framework For Building iOS7 Apps
 
-jQTouch is a JavaScript plugin which works with either Zepto.js or jQuery, and comes with smooth animations, navigation, and themes for mobile WebKit browsers (as found in iOS, Android, BlackBerry, and WebOS).
+## Attention!
 
-- [Easy to install](https://github.com/senchalabs/jQTouch/wiki/Getting-Started). Get up and running in a few minutes.
-- [Entirely customizable](https://github.com/senchalabs/jQTouch/wiki/Initialization-Options) with selector options
-- [Theme support](https://github.com/senchalabs/jQTouch/wiki/Theming), including default Apple and jQTouch custom themes
-- [Callback functions](https://github.com/senchalabs/jQTouch/wiki/Callback-Events) throughout, including swipe and orientation change detection
-- [Zepto](https://github.com/madrobby/zepto) integration - Use Zepto.js instead of jQuery to cut down on precious bandwidth. Zepto.js features a similar API to jQuery, but optimized for WebKit and much smaller.
-- Sass-based stylesheets, easily modified with variables and optimized for size.
-- Image-less stylesheets -- Using [Compass Recipes](https://github.com/senchalabs/compass-recipes), we have recreated all of the gradients and background patterns with CSS. This way, they are resolution independent, dynamically theme-able, and lower bandwidth.
-- Page history management and CSS3 page transitions, including 3D flip, cube, and swap
-- Failover to 2D animations for devices that don't support 3D
-- Easily allow apps to run in fullscreen mode with custom icons and startup screens
-- The power of jQuery to build AJAX applications
-- New demos: Clock and Todo
+Framework7 is on early development stage, so many things may be changed and sorted in a short time.
 
 ## Getting Started
+  * Clone/download this repo
+  * Start building your App from changing Kitchen Sink, or from a clean template from `dist/` folder
 
-The easiest way to try out jQT is with the demo archive, which can be found in the release tab on Github:
+## Server
 
-- [jQT Releases](https://github.com/senchalabs/jQTouch/releases)
+Because Framework7 uses Ajax for navigation between pages you will need a server. So to make it work you should put dist folder (or Kitchen Sink) on a server. Or, as an option, you may use Grunt's server. Just run:
 
-Please look for the download (green button) with filename prefixed with `jqt-demo` (ie, `jqt-demo-<< version >>.tar.gz`.)
+```
+$ grunt server
+```
 
-Once unzipped and untar, you can open `package/demons/index.html` with any WebkitBrowser on a desktop.
+  * Kitchen Sink will be available on `http://localhost:3000/kitchen-sink/`
+  * Dist - on `http://localhost:3000/dist/`
 
-## Links
+## Kitchen Sink
 
-Recently added features can be found at [New and Noteworthy](https://github.com/senchalabs/jQTouch/blob/master/VERSIONS.md) page.
+Framework7' JS and CSS files in Kitchen Sink are temporary linked to `build/` to make development process easier on this stage. So to make it work you need to build Framework7 (see Build section) or to re-link JS and CSS files to `dist/` folder.
 
-[Source code](http://github.com/senchalabs/jQTouch/archives/master), [issue tracking](http://github.com/senchalabs/jQTouch/issues), and [documentation](http://wiki.github.com/senchalabs/jQTouch/) are available on github.
+## Dist vs Build versions
 
-[Watch this video preview](http://www.jqtouch.com/) to see it in action.
+On production use files (JS and CSS) only from `dist/` folder, there will be the most stable versions, `build/` folder is only for development purpose
 
-## Building your own version of jQTouch
+## Build
 
-### Dependencies
+Framework7 uses `grunt` to build a development (build) and dist versions.
 
-We have quite a few dependencies at the moment, as we build with Compass/SASS for stylesheets, which is only available via Ruby. The actual build system, however, is built on Grunt.
+First you need to have `grunt-cli` which you should install globally.
 
-Please make sure you have the following installed:
+```
+$ npm install -g grunt-cli
+```
 
-* [Ruby](http://www.ruby-lang.org) — Comes default on Macs, Windows users can use [RubyInstaller](http://rubyinstaller.org)
-* [Sass](http://sass-lang.com) & [Compass](http://compass-style.org) — Install both with `sudo gem install compass` once you have Ruby/RubyGems installed
-* [Node.js & NPM](http://nodejs.org) — `brew install node`
-* [Grunt CLI](http://gruntjs.com) — Install with `npm install -g grunt-cli` once you have Node.js as listed above.
-* Local node packages — Run `npm install` from this directory
+Then install all dependencies, in repo's root:
 
-### Commands
+```
+$ npm install
+$ grunt build
+```
 
-#### `grunt` (default)
+The result is available in `build/` folder.
 
-Will create a build of jQTouch in the `build/` directory, compiling any theme files and updating with source from the Zepto submodule. This must be run to preview jQTouch.
+## Dist/Release
 
-#### `grunt build`
+After you have made build:
 
-This task is used only for iterative development. It does not update submodule, nor clean the build. (The `default` grunt task must be called once before this task.)
+```
+$ grunt dist
+```
 
-#### `grunt watch`
+Distributable version will available in `dist/` folder.
 
-Will create the same build as `grunt build`, but will continue to watch for file changes to theme and source files, compiling/copying them into build every time you save. If you have a livereload browser extension installed and enabled, the page will update live after every change. (The `default` grunt task must be called once before this task.)
+## Contributing
 
-#### `grunt compass`
+All changes should be commited to `src/` files. Framework7 uses LESS for CSS compliations, and concatenated JS files (look at Gruntfile.js for concat files order)
 
-Only build the theme files. Typically, you'll want to use `grunt watch` for developing a custom theme. (The `default` grunt task must be called once before this task.)
+If you want to help in Framework7 development and make it event better visit this page: http://www.idangero.us/framework7/contribute/
 
-#### `grunt test`
+## Forum
 
-Run our test suite. (The `default` grunt task must be called once before this task.)
+If you have questions about Framework7 or want to help others you are welcome to special forum at http://www.idangero.us/framework7/forum/
 
-#### `grunt dist`
+## Docs
 
-This is typically used internally for creating releases — It does everything the standard build does, but then additionally minifies all JS/CSS and updates the paths in demo files.
+Documentation available at http://idangero.us/framework7/docs/
 
+## Tutorials
 
+Tutorials available at http://idangero.us/framework7/tutorials/
 
-External Guides
----------------
+## Showcase
 
-Jonathan Stark has created an excellent introduction to jQTouch as part of his book, [Building iPhone Apps with HTML, CSS, and Javascript](http://ofps.oreilly.com/titles/9780596805784/chapAnimation.html).
-
-[PeepCode did a screencast](http://peepcode.com/products/jqtouch) ($9), as well as a [cheat sheet](http://blog.peepcode.com/tutorials/2009/jqtouch-cheat-sheet), which have been helpful to many people.
-
-Credits
--------
-
-Created, and still occasionally maintained, by [David Kaneda](http://www.davidkaneda.com).
-
-Maintained by [Thomas Yip](https://github.com/thomasyip).
-
-Special thanks to [pinch/zoom](http://www.pinchzoom.com/) and [Jonathan Stark](http://jonathanstark.com/).
-
-(c) 2009-2013 Sencha Labs.
-
-jQTouch may be freely distributed under the MIT license.
-See LICENSE.txt for license.
+Appstore apps made with Framework7: http://idangero.us/framework7/showcase/
