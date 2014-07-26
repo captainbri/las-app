@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(font/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url(font/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(font/d-6IYplOFocCacKzxwXSOD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(font/mnpfi9pxYH-Go5UiibESIj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+
+
+
 .cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
 .cf:after, .cf:after {clear:both;}
 .cf, .cf {*zoom:1;}
@@ -7,8 +35,21 @@
 
 
 .imgmax {max-width: 100%; height: auto;}
-.post-title {font-size: 1.4em; color: #009688; }
-.post-meta {color: #666; font-size: .9em;}
+
+
+.single-post {
+	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e;
+	.post-title {font-weight: normal; font-size: 1.9em; color: #009688; margin: 0;}
+	.post-meta {color: #666; font-size: .9em;}
+	.entry-content {
+		font-size: 1.1em;
+		h2 {color: #4db6ac; margin: 0 0 .5em 0; font-size: 1.3em; }
+		img {max-width: 100%; height: auto;}
+		}
+
+
+}
+
 
 
 .img-head {
@@ -18,9 +59,12 @@
 
 
 .navbar {
+	font: 300 1em 'Roboto', sans-serif; color: #009688;
 	background-color: #fff; border-bottom: 1px solid #b2dfdb;
 	a.link {color: #009688;}
 	}
+	
+.navbar, .toolbar {height: 55px;}	
 
  .logo {width: 40%; height: auto;}
 	
@@ -30,3 +74,11 @@
 	.content-block {color: #fff;}
 	a.item-link {color: #009688;}
 	}	
+	
+	
+.list-block.media-list	{
+	font: 300 1em 'Roboto', sans-serif !important; color: #1e1e1e;
+	.post-title {font-size: 1.2em; font-weight: 400; color: #009688;}
+	.post-date {font-size: .8em; color: #777 !important;}
+	.post-author {font-size: .9em; color: #777 !important;}
+}

@@ -48,28 +48,19 @@ function createContentPage() {
 }
 
 
-/*
-var options = {
-	url: "http://lifeasasister.org/ajax/test/",
-	method: 'POST';,
-	cache: false,
-	data: someObject,
-	xhrFields: {
-		withCredentials: true
-	},
-	crossDomain: true,
-	dataType: 'json';,
-	start: function(){
-		showloader();
-	},
-	success: function(responseData, status, xhr){
-		checkErrors(responseData);
-		renderPage(responseData);
-	},
-	error: function(e){
-		console.log(e) 
-	}
-	};
-		
-return $$.ajax(options);
-*/
+
+
+
+
+// Pull to refresh content
+var ptrContent = $$('.news-refresh');
+    ptrContent.on('refresh', function(e) {
+        alert(1);
+		myApp.pullToRefreshDone(ptrContent);
+});
+
+var ptrContent2 = $$('.blog-refresh');
+    ptrContent2.on('refresh', function(e) {
+        alert(2);
+		myApp.pullToRefreshDone(ptrContent2);
+});
