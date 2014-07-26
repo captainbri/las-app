@@ -37,18 +37,7 @@
 .imgmax {max-width: 100%; height: auto;}
 
 
-.single-post {
-	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e;
-	.post-title {font-weight: normal; font-size: 1.9em; color: #009688; margin: 0;}
-	.post-meta {color: #666; font-size: .9em;}
-	.entry-content {
-		font-size: 1.1em;
-		h2 {color: #4db6ac; margin: 0 0 .5em 0; font-size: 1.3em; }
-		img {max-width: 100%; height: auto;}
-		}
 
-
-}
 
 
 
@@ -81,4 +70,37 @@
 	.post-title {font-size: 1.2em; font-weight: 400; color: #009688;}
 	.post-date {font-size: .8em; color: #777 !important;}
 	.post-author {font-size: .9em; color: #777 !important;}
+	.register-now {font-size: .9em; color: #80cbc4 !important;}
 }
+
+
+.single-post {
+	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e;
+	.post-title {font-weight: normal; font-size: 1.9em; color: #009688; margin: 0;}
+	.post-meta {color: #666; font-size: .9em;}
+	.entry-content {
+		font-size: 1.2em;
+		h2 {color: #4db6ac; margin: 0 0 .5em 0; font-size: 1.3em; }
+		img {max-width: 100%; height: auto;}
+		}
+
+
+}
+
+.homepage {background: url('../img/homepage-header.jpg') 0 0 no-repeat !important;}
+
+
+
+
+/* === WORDPRESS POSTS BODY IMAGE ALIGNMENT === */
+	img.alignleft, img.alignright, img.aligncenter {margin-bottom: 1.625em;}
+	p img, .wp-caption {margin-top: 0.4em;}
+	.wp-caption {margin: 0; max-width: 100%; border-bottom: 3px solid #cd195a; background-color: #000;}
+	.wp-caption img {display: block; margin: 0; max-width: 100%; height: auto;}
+	.wp-caption .wp-caption-text, .gallery-caption {color: #666; font-size: .8em; font-family: 'Lato';}
+	.wp-caption .wp-caption-text {margin: 3px 0 15px 0; padding: 0; max-width: 96%;}
+	.wp-caption p.wp-caption-text {margin: .6em 2%; font: normal .8em arial, serif;}
+	.alignleft {display: inline; float: left; margin-right: 10px !important; border: 1px solid #ccc; padding: 3px; background-color: #fff;  -webkit-box-shadow: 1px 1px  5px #ccc;  box-shadow: 1px 1px 5px #ccc;}
+	.alignright {display: inline; float: right;	margin-left: 10px !important; border: 1px solid #ccc; padding: 3px; background-color: #fff;  -webkit-box-shadow: 1px 1px  5px #ccc;  box-shadow: 1px 1px  5px #ccc;}
+	.aligncenter {clear: both; display: block; margin-left: auto; margin-right: auto;}
+/* === END IMAGE ALIGNMENT === */

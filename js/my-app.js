@@ -51,8 +51,8 @@ function createContentPage() {
 
 
 
-
 // Pull to refresh content
+/*
 var ptrContent = $$('.news-refresh');
     ptrContent.on('refresh', function(e) {
         alert(1);
@@ -64,3 +64,4 @@ var ptrContent2 = $$('.blog-refresh');
         alert(2);
 		myApp.pullToRefreshDone(ptrContent2);
 });
+*/
