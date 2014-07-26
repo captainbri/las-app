@@ -9,6 +9,14 @@
     
 	<link rel="stylesheet" href="css/main.css">
 	
+	
+		
+	<script type="text/javascript" src="js/GALocalStorage.js"></script>
+	<script>
+    ga_storage._setAccount('UA-36987086-5'); 
+	ga_storage._setDomain('none');
+    ga_storage._trackPageview('/mobile-app/');
+	</script>
   </head>
   <body>
     <!-- Status bar overlay for fullscreen mode-->
@@ -43,13 +51,13 @@
 		 <li><a href="index.html" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Home</div>
+                  <div class="item-title"><i class="fa fa-home"></i> Home</div>
                 </div>
               </div></a></li>
 		 <li><a href="http://lifeasasister.org/ajax/daily-reflections/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Daily Reflections</div>
+                  <div class="item-title"><i class="fa fa-asterisk"></i> Daily Reflections</div>
                 </div>
               </div></a></li>
 			  
@@ -57,14 +65,14 @@
           <li><a href="http://lifeasasister.org/ajax/blog/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Sister's Blog</div>
+                  <div class="item-title"><i class="fa fa-heart-o"></i> Sister's Blog</div>
                 </div>
               </div></a></li>
 			  
          		   <li><a href="http://lifeasasister.org/ajax/faith-sharing/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Faith Sharing</div>
+                  <div class="item-title"><i class="fa fa-users"></i> Faith Sharing</div>
                 </div>
               </div></a></li>
 			  
@@ -72,28 +80,30 @@
 			   <li><a href="http://lifeasasister.org/ajax/online-retreat/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Virtual Retreat</div>
+                  <div class="item-title"><i class="fa fa-leaf"></i> Virtual Retreat</div>
+                </div>
+              </div></a></li>
+			  
+			  
+			  
+             <li><a href="http://lifeasasister.org/ajax/news/?mobile" class="close-panel item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title"><i class="fa fa-bullhorn"></i> News & Views</div>
                 </div>
               </div></a></li>
 			  
 			    <li><a href="http://lifeasasister.org/ajax/events/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Upcoming Events</div>
-                </div>
-              </div></a></li>
-			  
-             <li><a href="http://lifeasasister.org/ajax/news/?mobile" class="close-panel item-link">
-              <div class="item-content">
-                <div class="item-inner">
-                  <div class="item-title">News & Views</div>
+                  <div class="item-title"><i class="fa fa-calendar"></i> Upcoming Events</div>
                 </div>
               </div></a></li>
 			  
 			  <li><a href="http://lifeasasister.org/ajax/called-to-serve/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Called to Serve</div>
+                  <div class="item-title"><i class="fa fa-female"></i> Called to Serve</div>
                 </div>
               </div></a>
 			  </li>
@@ -101,7 +111,7 @@
 			    <li><a href="http://lifeasasister.org/ajax/contact-us/?mobile" class="close-panel item-link">
               <div class="item-content">
                 <div class="item-inner">
-                  <div class="item-title">Contact Us</div>
+                  <div class="item-title"><i class="fa fa-envelope-o"></i> Contact Us</div>
                 </div>
               </div></a></li>
 			  
@@ -130,7 +140,7 @@
             <!-- We have home navbar without left link-->
             <div class="center sliding"><img src="img/imagine-logo.png" class="logo"></div>
             <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
             </div>
           </div>
         </div>
@@ -139,17 +149,27 @@
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
+			
             <div class="page-content ">
             
 			
-			  <div class="content-block-title"> What do you imagine when you think about Sisters?</div>
+			<div class="content-block" id="homepage">
+			 <div class="content-block-inner">
+			 <h1> What do you imagine when you think about Sisters?</h1>
+			<h2>What is religious life all about?</h2>
+<p>Find out by spending time on our site journeying with some amazing religious women while exploring resources to help you discover your own calling in life.</p>
+			</div>
+			</div>
+			
+			
+			 <!--  <div class="content-block-title"> What do you imagine when you think about Sisters?</div>
               <div class="content-block">
                 <div class="content-block-inner">
                  
 <p>What is religious life all about?</p>
 <p>Find out by spending time on our site journeying with some amazing religious women while exploring resources to help you discover your own calling in life.</p>
                 </div>
-              </div>
+              </div> -->
 			  
 			  
 			  
@@ -219,6 +239,10 @@
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
-    <script type="text/javascript" src="js/my-app.js"></script>
+	 <script type="text/javascript" src="js/my-app.js"></script>
+
+
+	
+	
   </body>
 </html>
