@@ -14,7 +14,12 @@ var mainView = myApp.addView('.view-main', {
 
 //We can also add callback for all pages:
 myApp.onPageInit('*', function (page) {
-  ga_storage._trackPageview('/mobile-app/', page.name); 
+
+	// force entry-content links to new window.
+	$$(".entry-content a").attr('target','_blank');
+	$$(".entry-content a").addClass('external');
+
+	ga_storage._trackPageview('/mobile-app/', page.name); 
 });
 
 
@@ -48,3 +53,16 @@ else {
 });  
 }); 
 // END infinite scroll posts.
+
+
+/* homepage content */
+myApp.onPageInit('index', function (page) {
+if ($$(".homepage-content-ajax")[0]){
+	
+	$$.get('http://lifeasasister.org/ajax/blog/', function( data ) {
+		$$( ".homepage-content-ajax" ).append( data );
+	});	
+	
+}
+}); 
+/* end homepage content */

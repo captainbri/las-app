@@ -172,3 +172,31 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
   width:34px;
   height:34px;
 }    
+
+
+.single-share {
+	button {font-size: 1.7em; border: 0; color: #fff; padding: .3em; width: 1.7em; height: 1.7em; margin-right: .5em; float: left;}
+	.facebook {background-color: #3e5b97;}
+	.twitter {background-color: #2aa7de;}
+}
+
+.content-loading {
+	text-align: center; font: 400 1.5em 'Roboto', sans-serif; color: #777;
+	i {color: $loader;}
+	}
+	
+.homepage-feed {
+	ul {margin: 0; padding: 0; list-style-type: none; border: 1px solid #fff;}
+	li {float: left; width: 50%;  position: relative; border: 1px solid #fff;}
+	
+	.item-media {
+		width: 100%; float: left;
+		img {max-width: 100%; height: auto; float: left;}
+		}
+	.item-inner {
+		width: 100%; margin: 0; padding: .5em; position: absolute; bottom: 0; left: 0; background: $overlaybg; color: #fff;
+		.item-date {font-size: .8em; color: #fff;}
+		.item-title {font-size: 1.2em; font-weight: 700;}
+		.item-dek {font-size: .9em;}	
+		} 	
+}	
