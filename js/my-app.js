@@ -13,27 +13,14 @@ var mainView = myApp.addView('.view-main', {
 
 
 //We can also add callback for all pages:
-/*
 myApp.onPageInit('*', function (page) {
   ga_storage._trackPageview('/mobile-app/', page.name); 
 });
 
-*/
 
 
-// Pull to refresh content
-myApp.onPageInit('*', function (page) {
-var ptrContent = $$('.news-refresh');
-    ptrContent.on('refresh', function(e) {
-		myApp.pullToRefreshDone(ptrContent);
-});
 
-var ptrContent2 = $$('.blog-refresh');
-    ptrContent2.on('refresh', function(e) {
-		myApp.pullToRefreshDone(ptrContent2);
-});
-});
-// end refresh content
+
 
 
 // infinite scroll posts.
