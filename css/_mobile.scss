@@ -1,6 +1,19 @@
 @media screen and ( max-width: 480px ) {
 
 
-.list-feed .item-dek {display: none !important;}
+.no-rad {-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;}
+
+.list-feed {
+	li {margin: 0 0 2% 0; border-left: 0; border-right: 0; @extend .no-rad;}
+	.item-media {
+		width: 32%; @extend .no-rad;
+		img {@extend .no-rad;}
+		}
+	.item-inner {width: 68%; float: left;} 	
+	.item-dek {display: none;}
+	
+}
+
+
 
 }
