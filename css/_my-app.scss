@@ -57,13 +57,21 @@
 	background-color: #fff; border-bottom: 1px solid #b2dfdb;
 	a.link {color: #009688;}
 	.center {
-		width: 50%;
+		width: 50%; text-align: center !important;
 		img {width: auto; max-height: 50px; margin: 0 auto;}
 		}
 		.fa-bars {font-size: 1.5em;}
 	}
 	
-.navbar, .toolbar {height: 55px;}	
+.navbar, .toolbar {height: $nav-height;}	
+
+.navbar-through .page-content {padding-top: $nav-height;}
+.toolbar-through .page-content {padding-bottom: $nav-height;}
+.navbar-fixed .page-content {padding-top: $nav-height;}
+.toolbar-fixed .page-content {padding-bottom: $nav-height;}
+
+
+
 
 	
 .panel-left {
@@ -151,8 +159,11 @@ border-bottom-left-radius: 5px;}
 /* === END IMAGE ALIGNMENT === */
 
 
-#homepage {
-	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center;
+
+
+
+.cloud-head {
+	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; float: left; border: 0; width: 100%;
 	.content-block-inner {background: url('../img/homepage-header.jpg') bottom center no-repeat !important; background-color: transparent;}
 	h1 {font-weight: 400; font-size: 1.2em; color: #0051a0; margin: 0;} 
 	h2 {font-size: 1.6em; color: #4d968b; margin: 0;}
@@ -181,13 +192,16 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 }
 
 .content-loading {
-	text-align: center; font: 400 1.5em 'Roboto', sans-serif; color: #777;
+	text-align: center; font: 400 1.5em 'Roboto', sans-serif; color: #777; padding: 3%;
 	i {color: $loader;}
 	}
 	
+	
+.homepage-feed-head {background-color: #fff; color: $green1; font: 400 1.5em 'Roboto', sans-serif; padding: 1% 2%; float: left; width: 100%;}	
 .homepage-feed {
-	ul {margin: 0; padding: 0; list-style-type: none; border: 1px solid #fff;}
-	li {float: left; width: 50%;  position: relative; border: 1px solid #fff;}
+	background-color: #fff;
+	ul {margin: 0; padding: 0; list-style-type: none; border: 1px solid #fff; width: 100%;}
+	li {float: left; width: 50%; position: relative; border: 1px solid #fff;}
 	
 	.item-media {
 		width: 100%; float: left;

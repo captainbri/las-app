@@ -56,13 +56,11 @@ else {
 
 
 /* homepage content */
-myApp.onPageInit('index', function (page) {
+
 if ($$(".homepage-content-ajax")[0]){
-	
-	$$.get('http://lifeasasister.org/ajax/blog/', function( data ) {
-		$$( ".homepage-content-ajax" ).append( data );
+	$$.get('http://lifeasasister.org/ajax/feed-homepage/?mobile=1', function( data ) {
+		$$( ".homepage-content-ajax" ).html( data );
 	});	
-	
 }
-}); 
+
 /* end homepage content */
