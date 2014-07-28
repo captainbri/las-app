@@ -196,10 +196,11 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 	i {color: $loader;}
 	}
 	
-	
+
+.homepage-content-ajax {	background-color: #fff;}	
 .homepage-feed-head {background-color: #fff; color: $green1; font: 400 1.5em 'Roboto', sans-serif; padding: 1% 2%; float: left; width: 100%;}	
 .homepage-feed {
-	background-color: #fff;
+	font: 400 1em 'Roboto', sans-serif;
 	ul {margin: 0; padding: 0; list-style-type: none; border: 1px solid #fff; width: 100%;}
 	li {float: left; width: 50%; position: relative; border: 1px solid #fff;}
 	
