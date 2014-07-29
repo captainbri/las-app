@@ -40,10 +40,7 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
 	
-	<gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
-	<feature name="StatusBar">
-	<preference name="StatusBarBackgroundColor" value="#ffffff" />
-	</feature>
+
 	
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.0" />
 	<feature name="SocialSharing">
