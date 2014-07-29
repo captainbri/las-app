@@ -12,17 +12,21 @@ var mainView = myApp.addView('.view-main', {
 });
 
 
-//We can also add callback for all pages:
+//external links
 myApp.onPageInit('*', function (page) {
-
-	// force entry-content links to new window.
-	$$(".entry-content a").attr('target','_blank');
-	$$(".entry-content a").addClass('external');
-
-	ga_storage._trackPageview('/mobile-app/', page.name); 
+	$$(document).on('click','.entry-content a',function(e){
+		var url = $$(this).attr('href');
+		window.open(url, '_blank', 'location=yes');
+		e.preventDefault();
+	});
 });
 
 
+// track page views
+myApp.onPageInit('index', function (page) {
+	var url = $$('#ga').data('url');
+	ga('send', 'pageview', url);
+});
 
 
 
