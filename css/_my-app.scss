@@ -58,7 +58,7 @@
 	a.link {color: #009688;}
 	.center {
 		width: 50%; text-align: center !important;
-		img {width: auto; max-height: 50px; margin: 0 auto;}
+		img {width: auto; max-height: 45px; margin: 0 auto;}
 		}
 		.fa-bars {font-size: 1.5em;}
 	}
@@ -106,14 +106,13 @@ border-bottom-left-radius: 5px;}
 
 
 .list-feed {
-	font: 300 1em 'Roboto', sans-serif !important; color: #1e1e1e;
+	font: 300 1em 'Roboto', sans-serif !important; color: #1e1e1e; background-color: #fff;
 	a {display: block;  color: #1e1e1e;}
-	ul {margin: 0 1%; padding: 0; list-style-type: none;}
-	li {background-color: #fff; margin-bottom: 1em; border: 1px solid #ccc; -webkit-border-radius: .5em;
--moz-border-radius: .5em; border-radius: .5em;}
+	ul {margin: 0; padding: 0; list-style-type: none;}
+	li {background-color: #fff; margin: 0; padding: 0; border-bottom: 2px solid #b2dfdb;}
 	.item-media {
-		width: 30%; float: left; margin: 0; @extend .img-left-border; border-right: 1px solid #ccc;
-		img {max-width: 100%; height: auto; float: left; @extend .img-left-border;}
+		width: 30%; float: left; margin: 0; border-right: 2px solid #b2dfdb;
+		img {max-width: 100%; height: auto; float: left;}
 		}
 	.item-inner {float: left; width: 70%; margin: 0; padding: .5em;} 	
 	
@@ -163,7 +162,7 @@ border-bottom-left-radius: 5px;}
 
 
 .cloud-head {
-	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; background: url('../img/homepage-header.jpg') bottom center no-repeat; padding: 1em;
+	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; background: url('../img/homepage-header.jpg') bottom center no-repeat; padding: 1em; border-bottom: 1px solid #b2dfdb;
 	h1 {font-weight: 400; font-size: 1.2em; color: #0051a0; margin: 0;} 
 	h2 {font-size: 1.6em; color: #4d968b; margin: 0;}
 	p {margin: 0;}
@@ -202,7 +201,7 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 	margin: 0 0 .5em 0; font: 400 1em 'Roboto', sans-serif; position: relative; background-color: #fff;
 	.slider-head {
 		padding: 1%;
-		.slider-label {float: left; width: 50%; font: 400 1.4em 'Roboto', sans-serif; position: relative; color: $blue1;}
+		.slider-label {float: left; width: 50%; font: 400 1.4em 'Roboto', sans-serif; position: relative; color: $blue1; text-transform: uppercase;}
 		.slider-pagination {position: relative; float: right; width: 50%; margin: 0; bottom: 0; top: 4px; text-align: right;}
 		.slider-pagination-active {background: $green1; border-color: $green1;}   
 		}
@@ -223,7 +222,14 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 }
 
 
-.slider-prev, .slider-next {position: absolute; width:44px; background: rgba(0,0,0,0.5);  top: 50%; margin-top: -22px; line-height: 44px;
-  text-align:center; color: #fff; z-index: 9999999999;}
+.slider-prev, .slider-next {position: absolute; width:44px; top: 50%; margin-top: -22px;   text-align:center; color: #fff; z-index: 9999999999; font-size: 4em; text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);}
 .slider-prev {left:0;}
 .slider-next {right:0;}
+
+
+
+.comments {
+	border-top: 1px solid #ccc; margin-top: 1em; padding-top: .5em;
+	a {color: $green2; background-color: #fff;}
+
+}

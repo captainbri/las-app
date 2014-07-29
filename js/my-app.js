@@ -89,3 +89,27 @@ function setupHomepage() {
 }
 
  /* end homepage content */
+
+ 
+ 
+ myApp.onPageInit('*', function (page) {
+ if ($$("#disqus_thread")[0]){
+
+	
+	var thread_type = $$('#disqus_thread').data('type');
+	var thread_identifier = $$('#disqus_thread').data('identifier');
+	
+	
+	var disqus_shortname = $$('#disqus_thread').data('shortname');
+	var disqus_title = $$('#disqus_thread').data('title');
+	var disqus_url = $$('#disqus_thread').data('url');
+	var disqus_identifier = thread_identifier + ' http://lifeasasister.org/?post_type=' + thread_type + '&#038;p=' + thread_identifier;
+	 
+	(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+	
+	}
+});	
