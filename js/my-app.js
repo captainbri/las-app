@@ -55,12 +55,37 @@ else {
 // END infinite scroll posts.
 
 
-/* homepage content */
 
-if ($$(".homepage-content-ajax")[0]){
+
+
+ /* homepage content */
+
+if ($$(".homepage-content-ajax")[0]){setupHomepage();}
+myApp.onPageInit('index', function (page) {setupHomepage();});	
+
+
+
+function setupHomepage() {
 	$$.get('http://lifeasasister.org/ajax/feed-homepage/?mobile=1', function( data ) {
 		$$( ".homepage-content-ajax" ).html( data );
+		var mySlider = myApp.slider('.slider1', {
+		  pagination: '.pagination1',
+		  paginationHide: false,
+		  nextButton: '.slider-next-button1',
+		  prevButton: '.slider-prev-button1',
+		  spaceBetween: 16
+		});
+		
+		var mySlider2 = myApp.slider('.slider2', {
+		  pagination: '.pagination2',
+		  paginationHide: false,
+		  nextButton: '.slider-next-button2',
+		  prevButton: '.slider-prev-button2',
+		  spaceBetween: 16
+		});
+		
 	});	
+
 }
 
-/* end homepage content */
+ /* end homepage content */

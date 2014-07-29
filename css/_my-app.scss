@@ -42,7 +42,7 @@
 .imgmax {max-width: 100%; height: auto;}
 
 
-
+.w-head {margin: 0 0 1em 0;}	
 
 
 
@@ -163,8 +163,7 @@ border-bottom-left-radius: 5px;}
 
 
 .cloud-head {
-	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; float: left; border: 0; width: 100%;
-	.content-block-inner {background: url('../img/homepage-header.jpg') bottom center no-repeat !important; background-color: transparent;}
+	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; background: url('../img/homepage-header.jpg') bottom center no-repeat; padding: 1em;
 	h1 {font-weight: 400; font-size: 1.2em; color: #0051a0; margin: 0;} 
 	h2 {font-size: 1.6em; color: #4d968b; margin: 0;}
 	p {margin: 0;}
@@ -198,12 +197,19 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 	
 
 .homepage-content-ajax {	background-color: #fff;}	
-.homepage-feed-head {background-color: #fff; color: $green1; font: 400 1.5em 'Roboto', sans-serif; padding: 1% 2%; float: left; width: 100%;}	
-.homepage-feed {
-	font: 400 1em 'Roboto', sans-serif;
-	ul {margin: 0; padding: 0; list-style-type: none; border: 1px solid #fff; width: 100%;}
-	li {float: left; width: 50%; position: relative; border: 1px solid #fff;}
+
+.slider-container {
+	margin: 0 0 .5em 0; font: 400 1em 'Roboto', sans-serif; position: relative; background-color: #fff;
+	.slider-head {
+		padding: 1%;
+		.slider-label {float: left; width: 50%; font: 400 1.4em 'Roboto', sans-serif; position: relative; color: $blue1;}
+		.slider-pagination {position: relative; float: right; width: 50%; margin: 0; bottom: 0; top: 4px; text-align: right;}
+		.slider-pagination-active {background: $green1; border-color: $green1;}   
+		}
 	
+	}
+.slider-slide {
+	background: #fff; box-sizing: border-box; position: relative;
 	.item-media {
 		width: 100%; float: left;
 		img {max-width: 100%; height: auto; float: left;}
@@ -213,5 +219,11 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 		.item-date {font-size: .8em; color: #fff;}
 		.item-title {font-size: 1.2em; font-weight: 700;}
 		.item-dek {font-size: .9em;}	
-		} 	
-}	
+		} 		
+}
+
+
+.slider-prev, .slider-next {position: absolute; width:44px; background: rgba(0,0,0,0.5);  top: 50%; margin-top: -22px; line-height: 44px;
+  text-align:center; color: #fff; z-index: 9999999999;}
+.slider-prev {left:0;}
+.slider-next {right:0;}
