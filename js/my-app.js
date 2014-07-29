@@ -116,4 +116,14 @@ function setupHomepage() {
         })();
 	
 	}
+});
+
+
+ myApp.onPageInit('*', function (page) {
+$$('form.ajax-submit').on('submitted', function (e) {
+  var xhr = e.detail.xhr; // actual XHR object
+  var data = e.detail.data; // Ajax repsonse from action file
+  $$('#formwrap').html(data);
+  // do something with response data
 });	
+});
