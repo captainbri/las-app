@@ -77,7 +77,7 @@ function setupHomepage() {
 		  paginationHide: false,
 		  nextButton: '.slider-next-button1',
 		  prevButton: '.slider-prev-button1',
-		  spaceBetween: 16
+		  spaceBetween: 4
 		});
 		
 		var mySlider2 = myApp.slider('.slider2', {
@@ -85,7 +85,7 @@ function setupHomepage() {
 		  paginationHide: false,
 		  nextButton: '.slider-next-button2',
 		  prevButton: '.slider-prev-button2',
-		  spaceBetween: 16
+		  spaceBetween: 4
 		});
 		
 	});	

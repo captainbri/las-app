@@ -31,7 +31,7 @@
 .cf, .cf {*zoom:1;}
 	
 			
-.box, .box * { 
+.box, .box *, #formwrap input { 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -204,10 +204,10 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 .slider-container {
 	margin: 0 0 .5em 0; font: 400 1em 'Roboto', sans-serif; position: relative; background-color: #fff;
 	.slider-head {
-		padding: 1%;
-		.slider-label {float: left; width: 50%; font: 400 1.4em 'Roboto', sans-serif; position: relative; color: $blue1; text-transform: uppercase;}
+		padding: 1%; 
+		.slider-label {float: left; width: 50%; font: 400 1.4em 'Roboto', sans-serif; position: relative; color: $green2; text-transform: uppercase;}
 		.slider-pagination {position: relative; float: right; width: 50%; margin: 0; bottom: 0; top: 4px; text-align: right;}
-		.slider-pagination-active {background: $green1; border-color: $green1;}   
+		.slider-pagination-active {background: $green1; border-color: $green2;}   
 		}
 	
 	}
@@ -240,3 +240,13 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 
 
 .form-message {font-size: 1.5em; border: 1px solid $green1;}
+
+
+#formwrap {
+	border: 1px solid #ccc; font: 400 1em 'Roboto', sans-serif;
+	.form-head {background-color: $blue1; color: #fff; padding: 1% 2%; font-size: 1.5em; margin: 0;}
+	.field {padding: 1% 2%;}
+	label {display: block;}
+	input.txt {width: 100% !important; padding: 1.5%;}
+	textarea {width: 100% !important; height: 150px; padding: 1.5%;}
+	}
