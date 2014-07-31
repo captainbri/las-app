@@ -79,12 +79,15 @@
 	
 .panel-left {
 	background-color: #009688; color: #fff; font: 300 1em 'Roboto', sans-serif !important;
-	.content-block-title {color: #fff;}
+	.content-block-title {color: #fff; text-transform: none; font-size: 1.3em; margin-top: 25px;}
 	.content-block {color: #fff;}
 	a.item-link {
 		color: #009688; font-weight: 400;
 		.fa {color: #80cbc4;}
 		}
+	.list-block {margin-bottom: 0;}	
+	.sbs-logo img {float: right; width: 50%; height: auto;}	
+	.content-block.footer {margin: 1em 0 3em 0;}	
 }	
 	
 	
@@ -178,7 +181,7 @@ border-bottom-left-radius: 5px;}
 
 
 .cloud-head {
-	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; background: url('../img/homepage-header.jpg') bottom center no-repeat; padding: 1em; border-bottom: 1px solid #b2dfdb;
+	font: 300 1em 'Roboto', sans-serif; color: #1e1e1e; text-align: center; margin: 0; background: url('../img/homepage-header.jpg') bottom center no-repeat; padding: 1em; border-bottom: 1px solid #b2dfdb; position: relative;
 	h1 {font-weight: 400; font-size: 1.2em; color: #0051a0; margin: 0;} 
 	h2 {font-size: 1.6em; color: #4d968b; margin: 0;}
 	p {margin: 0;}
@@ -241,6 +244,15 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 .slider-prev, .slider-next {position: absolute; width:44px; top: 50%; margin-top: -22px;   text-align:center; color: #fff; z-index: 9999999999; font-size: 4em; text-shadow: 1px 1px 6px rgba(0, 0, 0, 1);}
 .slider-prev {left:0;}
 .slider-next {right:0;}
+
+
+.mylife {
+	.item-media {background-color: #e0f2f1;}
+	 .slider-slide .item-inner {width: 100%; margin: .5em 0; padding: 0; position: relative; bottom: auto; background: #fff; color: #1e1e1e; float: left; font: 400 1.125em 'Roboto', sans-serif;} 		
+	.slider-prev {top: 40%;}
+	.slider-next {top: 40%;}
+}
+
 
 
 

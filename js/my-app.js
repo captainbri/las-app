@@ -131,3 +131,15 @@ $$('form.ajax-submit').on('submitted', function (e) {
   // do something with response data
 });	
 });
+
+
+
+ myApp.onPageInit('*', function (page) {
+var mySlider = myApp.slider('.slider1', {
+		  pagination: '.pagination1',
+		  paginationHide: false,
+		  nextButton: '.slider-next-button1',
+		  prevButton: '.slider-prev-button1',
+		  spaceBetween: 4
+		});
+});		
