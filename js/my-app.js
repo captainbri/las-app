@@ -23,9 +23,11 @@ myApp.onPageInit('*', function (page) {
 
 
 // track page views
-myApp.onPageInit('index', function (page) {
-	var url = $$('#ga').data('url');
-	ga('send', 'pageview', url);
+myApp.onPageInit('*', function (page) {
+	$$('a.track').on('click', function (e) {
+		var url = $$(this).data('ga');
+		ga('send', 'pageview', url);
+	});
 });
 
 
