@@ -38,8 +38,8 @@ myApp.onPageInit('*', function (page) {
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
 			if (p1.indexOf(event.url) != -1 || p2.indexOf(event.url) != -1 || p3.indexOf(event.url) != -1 || p4.indexOf(event.url) != -1) { 		
-				alert(url); 
-				window.location.href = url;
+				alert(event.url); 
+				//window.location.href = url;
 			}
 		 });
         iabRef.addEventListener('exit', iabClose);
