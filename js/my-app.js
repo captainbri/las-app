@@ -47,11 +47,14 @@ var url = $$('a.button-comments').attr('href');
 	function iabLoadStop(event) {
        // alert(event.type + ' - ' + event.url);
 		//alert(url);
+			
+			var curr = event.url;
+		
 			var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
-			if (event.indexOf(p1) != -1 || event.indexOf(p2) != -1 || event.indexOf(p3) != -1 || event.indexOf(p4) != -1) { 	
+			if (curr.indexOf(p1) != -1 || curr.indexOf(p2) != -1 || curr.indexOf(p3) != -1 || curr.indexOf(p4) != -1) { 	
 				alert('yes');	
 				window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
 			}
