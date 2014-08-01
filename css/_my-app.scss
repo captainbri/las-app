@@ -307,3 +307,9 @@ background-image: -moz-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
 background-image: -webkit-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
 background-image: -ms-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
 background-image: linear-gradient(to bottom, #FFFFFF 58%, #B2DFDB 96%);}
+
+
+#disqus {
+	margin-top: 1em;
+	a.button-comments {background: $blue1; color: #fff;}
+}
