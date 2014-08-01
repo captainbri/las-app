@@ -44,7 +44,7 @@ myApp.onPageInit('*', function (page) {
 	
 	function iabLoadStop(event) {
         alert(event.type + ' - ' + event.url);
-		
+		alert(url);
 			/*var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
 			var p3 = "disqus.com/_ax/twitter/complete";
