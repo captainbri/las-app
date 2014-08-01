@@ -35,7 +35,7 @@ myApp.onPageInit('*', function (page) {
 		iabRef.addEventListener('loadstop', function(url) {
 		
 			var event = event.url;
-		
+			alert(event.type + ' - ' + event.url);
 		
 			var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
@@ -143,6 +143,14 @@ function setupHomepage() {
 		  paginationHide: false,
 		  nextButton: '.slider-next-button2',
 		  prevButton: '.slider-prev-button2',
+		  spaceBetween: 4
+		});
+		
+		var mySlider3 = myApp.slider('.slider3', {
+		  pagination: '.pagination3',
+		  paginationHide: false,
+		  nextButton: '.slider-next-button3',
+		  prevButton: '.slider-prev-button3',
 		  spaceBetween: 4
 		});
 		
