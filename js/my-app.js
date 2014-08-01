@@ -34,8 +34,8 @@ myApp.onPageInit('*', function (page) {
 		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
 		iabRef.addEventListener('loadstop', function() {
 		
-			var event = event.url;
-			alert(event);
+			//var event = event.url;
+			alert(event.url);
 		
 			/*var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
