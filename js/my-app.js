@@ -33,8 +33,6 @@ myApp.onPageInit('*', function (page) {
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
 		var ref = window.open(url, '_blank', 'location=no');
-		ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-		
 		e.preventDefault();
 	});
 	
@@ -55,8 +53,10 @@ myApp.onPageInit('*', function (page) {
 });
 /* end disqus complete */
 
-
-
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+      ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+}
 
 
 // track page views
