@@ -32,10 +32,18 @@ myApp.onPageInit('*', function (page) {
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
 		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
-		iabRef.addEventListener('loadstop', function() {
-		
-			//var event = event.url;
-			alert(event.url);
+		iabRef.addEventListener('loadstop', iabLoadStop);
+        iabRef.addEventListener('exit', iabClose);
+		e.preventDefault();
+	});
+	
+	function iabClose(event) {
+         iabRef.removeEventListener('loadstop', iabLoadStop);
+         iabRef.removeEventListener('exit', iabClose);
+    }
+	
+	function iabLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
 		
 			/*var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
@@ -47,14 +55,8 @@ myApp.onPageInit('*', function (page) {
 				//window.location.href = url;
 			}
 			*/
-		 });
-        iabRef.addEventListener('exit', iabClose);
-		e.preventDefault();
-	});
-	
-	function iabClose(event) {
-         iabRef.removeEventListener('loadstop', iabLoadStop);
-         iabRef.removeEventListener('exit', iabClose);
+		
+		
     }
 
 	
