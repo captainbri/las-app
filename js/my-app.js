@@ -29,6 +29,8 @@ myApp.onPageInit('*', function (page) {
 /* disqus complete */
 myApp.onPageInit('*', function (page) {
 
+var url = $$('a.button-comments').attr('href');
+
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
 		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
