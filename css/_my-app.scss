@@ -79,13 +79,20 @@
 	
 .panel-left {
 	background-color: #009688; color: #fff; font: 300 1em 'Roboto', sans-serif !important;
-	.content-block-title {color: #fff; text-transform: none; font-size: 1.3em; margin-top: 25px;}
-	.content-block {color: #fff;}
+	.content-block-title {
+		margin: 0;
+		img {width: auto; height: 50px; float: right;}
+		}
+
+	.content-block {color: #fff; }
 	a.item-link {
 		color: #009688; font-weight: 400;
 		.fa {color: #80cbc4;}
 		}
-	.list-block {margin-bottom: 0;}	
+	.list-block {
+		margin: 0;
+		ul { border: 0;}
+	}	
 	.sbs-logo img {float: right; width: 50%; height: auto;}	
 	.content-block.footer {margin: 1em 0 3em 0;}	
 }	
@@ -295,13 +302,7 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 }
 
 
-.gradient1 {background-image: -webkit-gradient(
-	linear,
-	left top,
-	left bottom,
-	color-stop(0.58, #FFFFFF),
-	color-stop(0.96, #B2DFDB)
-);
+.gradient1 {background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.58, #FFFFFF), color-stop(0.96, #B2DFDB));
 background-image: -o-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
 background-image: -moz-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
 background-image: -webkit-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
@@ -309,7 +310,15 @@ background-image: -ms-linear-gradient(bottom, #FFFFFF 58%, #B2DFDB 96%);
 background-image: linear-gradient(to bottom, #FFFFFF 58%, #B2DFDB 96%);}
 
 
+.gradient2 {background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #006AB1), color-stop(1, #003B88));
+background-image: -o-linear-gradient(bottom, #006AB1 0%, #003B88 100%);
+background-image: -moz-linear-gradient(bottom, #006AB1 0%, #003B88 100%);
+background-image: -webkit-linear-gradient(bottom, #006AB1 0%, #003B88 100%);
+background-image: -ms-linear-gradient(bottom, #006AB1 0%, #003B88 100%);
+background-image: linear-gradient(to bottom, #006AB1 0%, #003B88 100%);}
+
+
 #disqus {
 	margin: 1em 0;
-	a.button-comments {background: $blue1; color: #fff;}
+	a.button-comments {color: #fff; @extend .gradient2; font-weight: 400; border: 1px solid #0054a4;}
 }
