@@ -31,8 +31,8 @@ myApp.onPageInit('*', function (page) {
 
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
-		var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
-		iabRef.addEventListener('loadstop', function() {
+		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
+		iabRef.addEventListener('loadstop', function(url) {
 		
 			var event = event.url;
 		
@@ -43,7 +43,8 @@ myApp.onPageInit('*', function (page) {
 			var p4 = "disqus.com/_ax/facebook/complete";
 			if (event.indexOf(p1) != -1 || event.indexOf(p2) != -1 || event.indexOf(p3) != -1 || event.indexOf(p4) != -1) { 		
 				alert(event.url); 
-				window.location.href = url;
+				alert(url);
+				//window.location.href = url;
 			}
 		 });
         iabRef.addEventListener('exit', iabClose);
