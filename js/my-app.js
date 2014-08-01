@@ -28,7 +28,21 @@ myApp.onPageInit('*', function (page) {
 		e.preventDefault();
 	});
 	
+	// disqus counts
+	setTimeout(function() {
+	if ($$("#disqus")[0]){
+		var url = $$("#disqus").data('identifier');
+		$$.get('http://lifeasasister.org/ajax/disqus-count/?url='+url+'', function( data ) {
+		   $$('#disqus a').html(data);
+		});	
+	}	
+	}, 3000);
+	// end disqus counts
 });
+
+
+
+
 
 
 
