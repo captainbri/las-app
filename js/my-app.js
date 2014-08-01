@@ -52,7 +52,7 @@ var url = $$('a.button-comments').attr('href');
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
 			if (event.indexOf(p1) != -1 || event.indexOf(p2) != -1 || event.indexOf(p3) != -1 || event.indexOf(p4) != -1) { 		
-				window.location.href = url;
+				iabRef.location.href = url;
 			}
     }
 
