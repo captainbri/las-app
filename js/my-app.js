@@ -32,9 +32,23 @@ myApp.onPageInit('*', function (page) {
 
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
-		var ref = window.open(url, '_blank', 'location=no');
+		var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
+		 iabRef.addEventListener('loadstop', iabLoadStop);
+         iabRef.addEventListener('exit', iabClose);
 		e.preventDefault();
 	});
+	
+	
+	function iabLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+	function iabClose(event) {
+         alert(event.type);
+         iabRef.removeEventListener('loadstop', iabLoadStop);
+         iabRef.removeEventListener('exit', iabClose);
+    }
+
+	
 	
 	// disqus counts
 	setTimeout(function() {
@@ -53,10 +67,7 @@ myApp.onPageInit('*', function (page) {
 });
 /* end disqus complete */
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-      ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
-}
+
 
 
 // track page views
