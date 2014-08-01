@@ -32,28 +32,19 @@ myApp.onPageInit('*', function (page) {
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
 		var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
-		iabRef.addEventListener('loadstop', iabLoadStop);
+		iabRef.addEventListener('loadstop', function() {
+			var p1 = "disqus.com/next/login-success";
+			var p2 = "disqus.com/_ax/google/complete";
+			var p3 = "disqus.com/_ax/twitter/complete";
+			var p4 = "disqus.com/_ax/facebook/complete";
+			if (p1.indexOf(event.url) != -1 || p2.indexOf(event.url) != -1 || p3.indexOf(event.url) != -1 || p4.indexOf(event.url) != -1) { 		
+				alert(url); 
+				window.location.href = url;
+			}
+		 });
         iabRef.addEventListener('exit', iabClose);
 		e.preventDefault();
 	});
-	
-	
-	function iabLoadStop(event, url) {
-		var currentUrl = event.url;
-		
-		var pattern1 = "disqus.com/next/login-success";
-		var pattern2 = "disqus.com/_ax/google/complete";
-		var pattern3 = "disqus.com/_ax/twitter/complete";
-		var pattern4 = "disqus.com/_ax/facebook/complete";
-
-		if (pattern1.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
-		if (pattern2.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
-		if (pattern3.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
-		if (pattern4.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
-	
-		
-    }
-	
 	
 	function iabClose(event) {
          alert(event.type);
