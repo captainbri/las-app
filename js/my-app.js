@@ -21,10 +21,20 @@ myApp.onPageInit('*', function (page) {
 		window.open(url, '_blank', 'location=yes');
 		e.preventDefault();
 	});
-	
+});
+
+
+
+
+/* disqus complete */
+myApp.onPageInit('*', function (page) {
+
+
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
-		window.open(url, '_blank', 'location=yes');
+		var ref = window.open(url, '_blank', 'location=no');
+		ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+		
 		e.preventDefault();
 	});
 	
@@ -38,10 +48,12 @@ myApp.onPageInit('*', function (page) {
 	}	
 	}, 3000);
 	// end disqus counts
+
+
+
+
 });
-
-
-
+/* end disqus complete */
 
 
 
