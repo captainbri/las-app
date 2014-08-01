@@ -37,7 +37,7 @@ myApp.onPageInit('*', function (page) {
 			var event = event.url;
 			alert(event);
 		
-			var p1 = "disqus.com/next/login-success";
+			/*var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
@@ -46,6 +46,7 @@ myApp.onPageInit('*', function (page) {
 				alert(url);
 				//window.location.href = url;
 			}
+			*/
 		 });
         iabRef.addEventListener('exit', iabClose);
 		e.preventDefault();
