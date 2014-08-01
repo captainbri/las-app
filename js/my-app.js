@@ -29,7 +29,6 @@ myApp.onPageInit('*', function (page) {
 /* disqus complete */
 myApp.onPageInit('*', function (page) {
 
-	var url;
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
 		var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
@@ -39,8 +38,7 @@ myApp.onPageInit('*', function (page) {
 	});
 	
 	
-	function iabLoadStop(event) {
-		var CommentsUri = window.url;
+	function iabLoadStop(event, url) {
 		var currentUrl = event.url;
 		
 		var pattern1 = "disqus.com/next/login-success";
@@ -48,10 +46,10 @@ myApp.onPageInit('*', function (page) {
 		var pattern3 = "disqus.com/_ax/twitter/complete";
 		var pattern4 = "disqus.com/_ax/facebook/complete";
 
-		if (pattern1.indexOf(event.url) != -1) {alert(CommentsUri); window.location.href = CommentsUri;}
-		if (pattern2.indexOf(event.url) != -1) {alert(CommentsUri);window.location.href = CommentsUri;}
-		if (pattern3.indexOf(event.url) != -1) {alert(CommentsUri);window.location.href = CommentsUri;}
-		if (pattern4.indexOf(event.url) != -1) {alert(CommentsUri);window.location.href = CommentsUri;}
+		if (pattern1.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
+		if (pattern2.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
+		if (pattern3.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
+		if (pattern4.indexOf(event.url) != -1) {alert(url); window.location.href = url;}
 	
 		
     }
