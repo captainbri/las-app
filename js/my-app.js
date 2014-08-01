@@ -32,10 +32,10 @@ myApp.onPageInit('*', function (page) {
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
 		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
-		iabRef.addEventListener('loadstop', function(url) {
+		iabRef.addEventListener('loadstop', function() {
 		
 			var event = event.url;
-			alert(event.type + ' - ' + event.url);
+			alert(event);
 		
 			var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
