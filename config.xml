@@ -74,8 +74,8 @@
 	
 	<gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
-	<gap:splash gap:platform="ios" height="1536" src="res/screen/ios/screen-ipad-portrait-2x.png" width="2048" />
-    <gap:splash gap:platform="ios" height="2048" src="res/screen/ios/screen-ipad-landscape-2x.png" width="1536" />
+	<gap:splash gap:platform="ios" height="1536" src="res/screen/ios/screen-ipad-landscape-2x.png" width="2048" />
+    <gap:splash gap:platform="ios" height="2048" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
 	
 
     <access origin="*" />

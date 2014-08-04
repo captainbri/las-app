@@ -180,18 +180,3 @@ var mySlider = myApp.slider('.slider1', {
 		  spaceBetween: 4
 		});
 });		
-
-
-
-
-
-
-
-
-/* share your story */
-// toggle form
-myApp.onPageInit('faith-sharing-form', function (page) {
-	$$('.terms-toggle u').click(function() {
-		$$('.sys-terms').toggle(); 
-	});
-});

@@ -328,17 +328,3 @@ a.button-faith {color: #fff; background-color: $green1; font-weight: 400; border
 
 
 
-.sys-form-head {display: none;}
-.sys-form {
-	font: 400 1.125em 'Roboto', sans-serif;
-	ul {list-style-type: none; margin: 0; padding: 0;}
-	li {margin: 0 0 .6em 0;}
-	label {width: 100%;}
-	.field {width: 100%; padding: .4em;  border: 1px solid $green2; background-color: #d9f3e8;}
-	select {width: 100%; padding: .4em;  border: 1px solid $green2; background-color: #d9f3e8;}
-	textarea {height: 250px; width: 100%; padding: .4em;  border: 1px solid $green2; background-color: #d9f3e8; @extend .box;}
-	.sys-terms {display: none;}
-	input {@extend .box;}
-	select {@extend .box;}
-	button {width: 50%;}
-}
