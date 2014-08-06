@@ -2,9 +2,7 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Imagine a Sister's Life</name>
     <description>What do you imagine when you think about Sisters? What is religious life all about? Find out by spending time on our site journeying with some amazing religious women while exploring resources to help you discover your own calling in life.</description>
-    <author email="captainbri@gmail.com" href="http://lifeasasister.org">
-        Brian Santalone
-    </author>
+    <author email="captainbri@gmail.com" href="http://lifeasasister.org">Sisters of Bon Secours USA</author>
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="default" />
@@ -48,11 +46,11 @@
 	  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
 	</feature>
 	
+	<feature name="Camera">
+    <param name="ios-package" value="CDVCamera" />
+	<param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+	</feature>
 
-
-	<plugin name="File" value="CDVFile" />
-	<plugin name="FileTransfer" value="CDVFileTransfer" />
-	
 
     <icon src="icon.png" />
     <icon gap:platform="android" gap:qualifier="ldpi" src="res/icon/android/icon-36-ldpi.png" />
