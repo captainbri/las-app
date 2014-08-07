@@ -8,6 +8,9 @@
 
 
 
+.slider-head .slider-label {font-size: 1.2em !important; width: 60% !important;}
+.slider-head .slider-pagination {width: 40% !important;}
+
 .slider-slide {
 	.item-inner .item-dek {display: none;}	
 	.item-inner .item-title {font-size: 1em;}
@@ -18,6 +21,25 @@
 	img.alignleft {width: 100%; height: auto; border: 0; padding: 0; margin: .5em 0;}
 	img.alignright {width: 100%; height: auto; border: 0; padding: 0; margin: .5em 0;}
 }
+
+
+
+.bottom-nav {
+	span {display: none;}
+	a {width: 85%;}
+	a.left { width: 15%;}
+}
+
+
+
+.cloud-head {
+	h1 {font-size: 1.1em;} 
+	h2 {font-size: 1.4em;}
+}
+
+
+
+
 
 
 
