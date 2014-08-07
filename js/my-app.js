@@ -180,3 +180,22 @@ var mySlider = myApp.slider('.slider1', {
 		  spaceBetween: 4
 		});
 });		
+
+
+
+
+myApp.onPageInit('*', function (page) {
+	$$('.terms-toggle u').on('click', function (e) {
+	  $$('.sys-terms').show();
+	});	
+});		
+
+
+function getPhoto(source) {
+    // Retrieve image file location from specified source
+    navigator.camera.getPicture(uploadPhoto, onFail, { quality: 50,
+        destinationType: navigator.camera.DestinationType.FILE_URI,
+        sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
+		alert('var1: ' + destinationType + ' var2: ' + sourceType);
+    });
+}
