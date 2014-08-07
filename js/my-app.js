@@ -196,6 +196,6 @@ function getPhoto(source) {
     navigator.camera.getPicture(uploadPhoto, onFail, { quality: 50,
         destinationType: navigator.camera.DestinationType.FILE_URI,
         sourceType: navigator.camera.PictureSourceType.PHOTOLIBRARY
-		alert('var1: ' + destinationType + ' var2: ' + sourceType);
     });
+	alert('var1: ' + destinationType + ' var2: ' + sourceType);
 }
