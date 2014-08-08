@@ -18,7 +18,13 @@ var mainView = myApp.addView('.view-main', {
 myApp.onPageInit('*', function (page) {
 	$$(document).on('click','.entry-content a',function(e){
 		var url = $$(this).attr('href');
-		window.open(url, '_blank', 'location=yes');
+		window.open(url, '_blank', 'location=no');
+		e.preventDefault();
+	});
+	
+	$$(document).on('click','a.faith-share',function(e){
+		var url = $$(this).attr('href');
+		window.open(url, '_blank', 'location=no');
 		e.preventDefault();
 	});
 });
@@ -188,3 +194,16 @@ myApp.onPageInit('*', function (page) {
 	  $$('.sys-terms').show();
 	});	
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
