@@ -11,6 +11,9 @@ function onPhotoDataSuccess(imageData) {
 	var smallImage = document.getElementById('smallImage');
 	smallImage.style.display = 'block';
 	smallImage.src = "data:image/jpeg;base64," + imageData;
+	
+	var imagefield = document.getElementById('image');
+	imagefield.value = "data:image/jpeg;base64," + imageData;
 }
 
 function onPhotoURISuccess(imageURI) {
@@ -19,20 +22,10 @@ function onPhotoURISuccess(imageURI) {
 	largeImage.src = imageURI;
 }
 
-function capturePhoto() {
-	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
-	destinationType: destinationType.DATA_URL });
-}
 
-function capturePhotoEdit() {
-	navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
-	destinationType: destinationType.DATA_URL });
-}
 
-function getPhoto(source) {
+function getPhoto() {
 	navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50,
-	//destinationType: destinationType.FILE_URI,
-	//sourceType: source 
 	destinationType: Camera.DestinationType.FILE_URI, 
 	sourceType:Camera.PictureSourceType.PHOTOLIBRARY
 	
