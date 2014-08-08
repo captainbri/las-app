@@ -89,11 +89,12 @@ myApp.onPageInit('*', function (page) {
 
 // infinite scroll posts.
 myApp.onPageInit('*', function (page) {
+
+// Attach 'infinite' event handler
 var pagenum = 1;
 var loading = false;
 var num_messages = $$('.list-feed').data('max');
 var type = $$('.list-feed').data('type');
-// Attach 'infinite' event handler
 $$('.infinite-scroll').on('infinite', function () {
 
   if (pagenum >= num_messages) {
@@ -104,7 +105,7 @@ $$('.infinite-scroll').on('infinite', function () {
 else {
 	pagenum += 1;
 	loading = true;
-	$$.get('http://lifeasasister.org/ajax/load-more/?type='+type+'ajaxpage='+pagenum+'', function( data ) {
+	$$.get('http://lifeasasister.org/ajax/load-more/?type='+type+'&ajaxpage='+pagenum+'', function( data ) {
 		$$( ".list-feed ul" ).append( data );
 	});	
 }	
@@ -112,8 +113,6 @@ else {
 });  
 }); 
 // END infinite scroll posts.
-
-
 
 
 
