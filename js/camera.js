@@ -7,19 +7,14 @@ function onDeviceReady() {
 	destinationType=navigator.camera.DestinationType;
 }		
     
-function onPhotoDataSuccess(imageData) {
-	var smallImage = document.getElementById('smallImage');
-	smallImage.style.display = 'block';
-	smallImage.src = "data:image/jpeg;base64," + imageData;
-	
-	var imagefield = document.getElementById('image');
-	imagefield.value = "data:image/jpeg;base64," + imageData;
-}
 
 function onPhotoURISuccess(imageURI) {
 	var largeImage = document.getElementById('largeImage');
 	largeImage.style.display = 'block';
 	largeImage.src = imageURI;
+	
+	var imagefield = document.getElementById('image');
+	imagefield.value = imageURI;
 }
 
 
