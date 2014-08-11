@@ -21,12 +21,6 @@ myApp.onPageInit('*', function (page) {
 		window.open(url, '_blank', 'location=no');
 		e.preventDefault();
 	});
-	
-	$$(document).on('click','a.faith-share',function(e){
-		var url = $$(this).attr('href');
-		window.open(url, '_blank', 'location=no');
-		e.preventDefault();
-	});
 });
 
 
