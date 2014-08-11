@@ -75,7 +75,7 @@
 .toolbar-fixed .page-content {padding-bottom: $nav-height;}
 
 
-
+.content-block.no-bottom-margin {margin-bottom: 0 !important;}
 	
 .panel-left {
 	background-color: #009688; color: #fff; font: 300 1em 'Roboto', sans-serif !important;
@@ -270,7 +270,7 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 
 
 #formwrap {
-	margin: 1em 0; border: 1px solid #4DB6AC; font: 400 1em 'Roboto', sans-serif;
+	margin: 0; border: 1px solid #4DB6AC; font: 400 1em 'Roboto', sans-serif; width: 100%; float: left;
 	.form-head {@extend .gradient3; color: #fff; padding: .3em .5em; font-size: 1.5em; margin: 0;}	
 }
 	
