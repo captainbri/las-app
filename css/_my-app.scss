@@ -325,7 +325,7 @@ background-image: linear-gradient(to bottom, #4DB6AC 0%, #009687 100%);}
 }
 
 
-a.button-faith {color: #fff; background-color: $green1; font-weight: 400; border: 1px solid $green2; width: 60%; display: block; margin: 1em auto 0 auto;}
+a.button-faith {color: #fff; @extend .gradient3; font-weight: 400; border: 1px solid $green2; width: 60%; display: block; margin: 1em auto 0 auto;}
 
 
 
