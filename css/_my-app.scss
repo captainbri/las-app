@@ -60,8 +60,9 @@
 	background-color: #fff; border-bottom: 1px solid #b2dfdb;
 	a.link {color: #009688;}
 	.center {
-		width: 50%; text-align: center !important;
+		width: 50%;
 		img {width: auto; max-height: 45px; margin: 0 auto;}
+		span {text-align: center; display: block; width: 100%;}
 		}
 		.fa-bars {font-size: 1.5em;}
 	}
@@ -72,7 +73,6 @@
 .toolbar-through .page-content {padding-bottom: $nav-height;}
 .navbar-fixed .page-content {padding-top: $nav-height;}
 .toolbar-fixed .page-content {padding-bottom: $nav-height;}
-
 
 
 
@@ -270,13 +270,12 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 
 
 #formwrap {
-	border: 1px solid #ccc; font: 400 1em 'Roboto', sans-serif;
-	.form-head {background-color: $blue1; color: #fff; padding: 1% 2%; font-size: 1.5em; margin: 0;}
-	.field {padding: 1% 2%;}
-	label {display: block;}
-	input.txt {width: 100% !important; padding: 1.5%;}
-	textarea {width: 100% !important; height: 150px; padding: 1.5%;}
-	}
+	margin: 1em 0; border: 1px solid #4DB6AC; font: 400 1em 'Roboto', sans-serif;
+	.form-head {@extend .gradient3; color: #fff; padding: .3em .5em; font-size: 1.5em; margin: 0;}	
+}
+	
+
+	
 
 	
 .button-subnav {font-size: 3em; float: right; color: $blue1;}	
@@ -313,6 +312,12 @@ background-image: -webkit-linear-gradient(bottom, #006AB1 0%, #003B88 100%);
 background-image: -ms-linear-gradient(bottom, #006AB1 0%, #003B88 100%);
 background-image: linear-gradient(to bottom, #006AB1 0%, #003B88 100%);}
 
+.gradient3 {background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4DB6AC), color-stop(1, #009687));
+background-image: -o-linear-gradient(bottom, #4DB6AC 0%, #009687 100%);
+background-image: -moz-linear-gradient(bottom, #4DB6AC 0%, #009687 100%);
+background-image: -webkit-linear-gradient(bottom, #4DB6AC 0%, #009687 100%);
+background-image: -ms-linear-gradient(bottom, #4DB6AC 0%, #009687 100%);
+background-image: linear-gradient(to bottom, #4DB6AC 0%, #009687 100%);}
 
 #disqus {
 	margin: 1em 0;
