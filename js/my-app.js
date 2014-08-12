@@ -188,16 +188,3 @@ myApp.onPageInit('*', function (page) {
 	  $$('.sys-terms').show();
 	});	
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
