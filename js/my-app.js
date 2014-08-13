@@ -1,7 +1,7 @@
 // Initialize your app
 var myApp = new Framework7({
 	cache: true,
-	cacheIgnoreGetParameters: true,
+	cacheIgnoreGetParameters: false,
 	onAjaxStart: showLoading,
 	onAjaxComplete: hideLoading,
 });
