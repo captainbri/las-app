@@ -1,16 +1,35 @@
 // Initialize your app
 var myApp = new Framework7({
-	cache: false
+	cache: false,
+	cacheIgnoreGetParameters: true,
+	onAjaxStart: showLoading,
+	onAjaxComplete: hideLoading,
 });
+
 
 // Export selectors engine
 var $$ = Framework7.$;
 
 
+ 
+/* test */
+
+function showLoading() {
+	$$('body').append('<div class="preloader-indicator-overlay"></div><div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>');
+	}
+function hideLoading() {
+	$$('.preloader-indicator-overlay, .preloader-indicator-modal').remove();
+}
+
+/* end test */
+
+
+
+
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
-    dynamicNavbar: true
+    dynamicNavbar: true	
 });
 
 
@@ -22,6 +41,8 @@ myApp.onPageInit('*', function (page) {
 		e.preventDefault();
 	});
 });
+
+
 
 
 
