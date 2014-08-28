@@ -116,10 +116,8 @@ var pagenum = 1;
 var loading = false;
 var num_messages = $$('.list-feed').data('max');
 var type = $$('.list-feed').data('type');
-$$('.infinite-scroll').on('infinite', function () {
 
-alert(pagenum);
-alert(num_messages);
+$$('.infinite-scroll').on('infinite', function () {
 
   if (pagenum >= num_messages) {
       myApp.detachInfiniteScroll($$('.infinite-scroll'));
