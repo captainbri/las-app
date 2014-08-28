@@ -189,8 +189,12 @@
 	h1 {font-weight: 400; font-size: 1.2em; color: #0051a0; margin: 0;} 
 	h2 {font-size: 1.6em; color: #4d968b; margin: 0;}
 	p {margin: 0;}
+	.pad {padding: .5em 1em 1em 1em;}
 	}
-	
+.cloud-head.no-pad {
+	padding: 0;
+	img {max-width: 100%; height: auto; border-bottom: 1px solid #b2dfdb;}
+	}	
 	
 h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0; text-transform: uppercase;}	
 
