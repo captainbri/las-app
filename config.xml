@@ -4,7 +4,7 @@
     <description>What do you imagine when you think about Sisters? What is religious life all about? Find out by spending time on our site journeying with some amazing religious women while exploring resources to help you discover your own calling in life.</description>
     <author email="captainbri@gmail.com" href="http://lifeasasister.org">Sisters of Bon Secours USA</author>
     <preference name="permissions" value="none" />
-    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="phonegap-version" value="3.6.3" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
