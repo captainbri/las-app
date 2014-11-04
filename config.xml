@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.lifeasasister.app" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="org.lifeasasister.app" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Imagine a Sister's Life</name>
-    <description>What do you imagine when you think about Sisters? What is religious life all about? Find out by spending time with our app journeying with some amazing religious women while exploring resources to help you discover your own calling in life.</description>
+    <description>Spend time on our app journeying with some amazing religious women. Explore resources to help you discover your calling in life!</description>
     <author email="captainbri@gmail.com" href="http://lifeasasister.org">Sisters of Bon Secours USA</author>
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.6.3" />
