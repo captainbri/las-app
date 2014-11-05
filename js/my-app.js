@@ -68,7 +68,7 @@ var url = $$('a.button-comments').attr('href');
 	function iabLoadStop(event) {
 			var curr = event.url;
 			
-			if(event.url == "http://lifeasasister.org/ajax/disqus/?close"){iabRef.close();}
+			if(curr == "http://lifeasasister.org/ajax/disqus/?close=1"){iabRef.close();}
 			
 			var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
