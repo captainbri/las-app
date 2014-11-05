@@ -54,7 +54,7 @@ var url = $$('a.button-comments').attr('href');
 
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
-		var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
+		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
 		iabRef.addEventListener('loadstop', iabLoadStop);
         iabRef.addEventListener('exit', iabClose);
 		e.preventDefault();
@@ -67,16 +67,12 @@ var url = $$('a.button-comments').attr('href');
 	
 	function iabLoadStop(event) {
 			var curr = event.url;
-			
-			if(curr == "http://lifeasasister.org/ajax/disqus/?close=1"){iabRef.close();}
-			
 			var p1 = "disqus.com/next/login-success";
 			var p2 = "disqus.com/_ax/google/complete";
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
-			var p5 = "/ajax/disqus/close/";
 			if (curr.indexOf(p1) != -1 || curr.indexOf(p2) != -1 || curr.indexOf(p3) != -1 || curr.indexOf(p4) != -1) { 	
-				window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
+				window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
 			}
     }
 
