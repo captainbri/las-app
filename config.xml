@@ -47,12 +47,6 @@
 	</feature>
 	
 	
-	<gap:plugin name="com.phonegap.plugins.facebookconnect">
-        <param name="APP_ID" value="715517515205963" />
-        <param name="APP_NAME" value="Life As A Sister" />
-    </gap:plugin>
-	
-	
 	<feature name="Camera">
     <param name="ios-package" value="CDVCamera" />
 	<param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
