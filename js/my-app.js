@@ -64,12 +64,12 @@ myApp.onPageInit('*', function (page) {
 
 
 
-/* disqus complete */
+/* facebook post */
 myApp.onPageInit('*', function (page) {
 
-var url = $$('a.button-comments').attr('href');
+var url = $$('a.button-post-facebook').attr('href');
 
-	$$(document).on('click','a.button-comments',function(e){
+	$$(document).on('click','a.button-post-facebook',function(e){
 		var url = $$(this).attr('href');
 		iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
 		iabRef.addEventListener('loadstop', iabLoadStop);
@@ -95,22 +95,9 @@ var url = $$('a.button-comments').attr('href');
 			}
     }
 
-	// disqus counts
-	setTimeout(function() {
-	if ($$("#disqus")[0]){
-		var url = $$("#disqus").data('identifier');
-		$$.get('http://lifeasasister.org/ajax/disqus-count/?url='+url+'', function( data ) {
-		   $$('#disqus a').html(data);
-		});	
-	}	
-	}, 3000);
-	// end disqus counts
-
-
-
 
 });
-/* end disqus complete */
+/* end facebook post */
 
 
 

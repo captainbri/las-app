@@ -25,9 +25,8 @@
 
 
 
-/*body.device-unknown {max-width: 800px; margin: 0 auto;} */
-
 .android-back {display: none;}
+.ios-facebook {display: none;}
 
 body.device-unknown {
 	.android-back {display: block;}
@@ -37,6 +36,13 @@ body.device-Android {
 	.android-back {display: block;}
 	#theiFrame {min-height: 600px;}
 }
+body.device-iOS {
+	.ios-facebook {display: inline-block;}
+	.android-facebook {display: none;}
+}
+
+
+
 
 .cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
 .cf:after, .cf:after {clear:both;}
