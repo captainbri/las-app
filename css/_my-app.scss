@@ -29,8 +29,9 @@
 
 .android-back {display: none;}
 
-body.device-android {
+body.device-unknown {
 	.android-back {display: block;}
+	#theiFrame {min-height: 1200px;}
 }
 
 
