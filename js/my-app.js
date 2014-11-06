@@ -90,6 +90,7 @@ var url = $$('a.button-comments').attr('href');
 			var p4 = "disqus.com/_ax/facebook/complete";
 			
 			if (event.url == "http://lifeasasister.org/wp-content/themes/imagine/mobile-app/closeInAppBrowser.html") {
+					alert(event.url);
 					iabRef.close();
 			}
 			else if (curr.indexOf(p1) != -1 || curr.indexOf(p2) != -1 || curr.indexOf(p3) != -1 || curr.indexOf(p4) != -1) { 	
