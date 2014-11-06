@@ -33,7 +33,10 @@ body.device-unknown {
 	.android-back {display: block;}
 	#theiFrame {min-height: 1200px;}
 }
-
+body.device-Android {
+	.android-back {display: block;}
+	#theiFrame {min-height: 1200px;}
+}
 
 .cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
 .cf:after, .cf:after {clear:both;}
