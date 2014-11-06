@@ -12,11 +12,6 @@ var $$ = Framework7.$;
 
 
 
-
-
-
-
-
  
 /* test */
 
@@ -57,16 +52,7 @@ myApp.onPageInit('*', function (page) {
 		window.open(url, '_system', 'location=yes');
 		e.preventDefault();
 	});
-	
-	$$(document).on('click','a.button-post-facebook',function(e){
-		var url = $$(this).attr('href');
-		window.open(url, '_system', 'location=yes');
-		e.preventDefault();
-	});
-	
 });
-
-
 
 
 
