@@ -71,8 +71,7 @@ var url = $$('a.button-comments').attr('href');
 
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
-		if ("Android" == getMobileOperatingSystem()) {var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');}
-		else {var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');}
+		var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
 		iabRef.addEventListener('loadstop', iabLoadStop);
         iabRef.addEventListener('exit', iabClose);
 		e.preventDefault();
@@ -90,8 +89,7 @@ var url = $$('a.button-comments').attr('href');
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
 			if (curr.indexOf(p1) != -1 || curr.indexOf(p2) != -1 || curr.indexOf(p3) != -1 || curr.indexOf(p4) != -1) { 	
-				if ("Android" == getMobileOperatingSystem()) {window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');}
-				else {window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');}
+				window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
 			}
     }
 

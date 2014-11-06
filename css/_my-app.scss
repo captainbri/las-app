@@ -27,6 +27,12 @@
 
 /*body.device-unknown {max-width: 800px; margin: 0 auto;} */
 
+.android-back {display: none;}
+
+body.device-android {
+	.android-back {display: block;}
+}
+
 
 .cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
 .cf:after, .cf:after {clear:both;}
