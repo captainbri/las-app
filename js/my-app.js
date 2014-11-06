@@ -11,6 +11,12 @@ var myApp = new Framework7({
 var $$ = Framework7.$;
 
 
+
+
+
+
+
+
  
 /* test */
 
@@ -31,6 +37,17 @@ var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true	
 });
+
+
+/* browser tests */
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) ) {return 'iOS';}
+  else if( userAgent.match( /Android/i ) ) {return 'Android';}
+  else {return 'unknown';}
+}
+/* END browser tests */
+
 
 
 //external links
@@ -54,7 +71,8 @@ var url = $$('a.button-comments').attr('href');
 
 	$$(document).on('click','a.button-comments',function(e){
 		var url = $$(this).attr('href');
-		var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
+		if ("Android" == getMobileOperatingSystem()) {var iabRef = window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');}
+		else {var iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');}
 		iabRef.addEventListener('loadstop', iabLoadStop);
         iabRef.addEventListener('exit', iabClose);
 		e.preventDefault();
@@ -72,7 +90,8 @@ var url = $$('a.button-comments').attr('href');
 			var p3 = "disqus.com/_ax/twitter/complete";
 			var p4 = "disqus.com/_ax/facebook/complete";
 			if (curr.indexOf(p1) != -1 || curr.indexOf(p2) != -1 || curr.indexOf(p3) != -1 || curr.indexOf(p4) != -1) { 	
-				window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');
+				if ("Android" == getMobileOperatingSystem()) {window.open(url, '_blank', 'location=yes,closebuttoncaption=Close Window');}
+				else {window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');}
 			}
     }
 
@@ -141,7 +160,7 @@ else {
  /* homepage content */
 
 if ($$(".homepage-content-ajax")[0]){setupHomepage();}
-myApp.onPageInit('index', function (page) {setupHomepage();});	
+myApp.onPageInit('index', function (page) {setupHomepage();   });	
 
 
 
@@ -172,6 +191,8 @@ function setupHomepage() {
 		  spaceBetween: 4
 		});
 		
+		var browserClass = getMobileOperatingSystem();
+		$$('body').addClass('device-' + browserClass);
 	});	
 
 }

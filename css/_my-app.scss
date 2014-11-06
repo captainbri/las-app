@@ -25,6 +25,8 @@
 
 
 
+/*body.device-unknown {max-width: 800px; margin: 0 auto;} */
+
 
 .cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
 .cf:after, .cf:after {clear:both;}
@@ -212,9 +214,11 @@ h4.register-now {font: 400 1.6em 'Roboto', sans-serif; color: #9c27b0; margin: 0
 
 
 .single-share {
-	button {font-size: 1.7em; border: 0; color: #fff; padding: .3em; width: 1.7em; height: 1.7em; margin-right: .5em; float: left;}
+	button {font-size: 1.7em; border: 0; color: #fff; padding: .3em; width: 2.5em; height: 1.7em; margin-right: .8em; float: left; cursor: pointer;}
+	button:hover {opacity:0.8; filter:alpha(opacity=80);}
 	.facebook {background-color: #3e5b97;}
 	.twitter {background-color: #2aa7de;}
+	
 }
 
 .content-loading {
