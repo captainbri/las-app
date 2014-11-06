@@ -54,9 +54,16 @@ function getMobileOperatingSystem() {
 myApp.onPageInit('*', function (page) {
 	$$(document).on('click','.entry-content a',function(e){
 		var url = $$(this).attr('href');
-		window.open(url, '_blank', 'location=no');
+		window.open(url, '_system', 'location=yes');
 		e.preventDefault();
 	});
+	
+	$$(document).on('click','a.button-post-facebook',function(e){
+		var url = $$(this).attr('href');
+		window.open(url, '_system', 'location=yes');
+		e.preventDefault();
+	});
+	
 });
 
 
@@ -65,6 +72,8 @@ myApp.onPageInit('*', function (page) {
 
 
 /* facebook post */
+
+/*
 myApp.onPageInit('*', function (page) {
 
 var url = $$('a.button-post-facebook').attr('href');
@@ -97,6 +106,8 @@ var url = $$('a.button-post-facebook').attr('href');
 
 
 });
+
+*/
 /* end facebook post */
 
 
