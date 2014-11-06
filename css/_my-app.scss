@@ -31,11 +31,11 @@
 
 body.device-unknown {
 	.android-back {display: block;}
-	#theiFrame {min-height: 1200px;}
+	#theiFrame {min-height: 600px;}
 }
 body.device-Android {
 	.android-back {display: block;}
-	#theiFrame {min-height: 1200px;}
+	#theiFrame {min-height: 600px;}
 }
 
 .cf:before, .cf:after, .cf:before, .cf:after {content:""; display:table;}
