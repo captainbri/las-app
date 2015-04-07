@@ -11,20 +11,14 @@ var myApp = new Framework7({
 var $$ = Framework7.$;
 
 
-
- 
 /* test */
-
 function showLoading() {
 	$$('body').append('<div class="preloader-indicator-overlay"></div><div class="preloader-indicator-modal"><span class="preloader preloader-white"></span></div>');
 	}
 function hideLoading() {
 	$$('.preloader-indicator-overlay, .preloader-indicator-modal').remove();
 }
-
 /* end test */
-
-
 
 
 // Add view
@@ -55,50 +49,6 @@ myApp.onPageInit('*', function (page) {
 });
 
 
-
-
-/* facebook post */
-
-/*
-myApp.onPageInit('*', function (page) {
-
-var url = $$('a.button-post-facebook').attr('href');
-
-	$$(document).on('click','a.button-post-facebook',function(e){
-		var url = $$(this).attr('href');
-		iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
-		iabRef.addEventListener('loadstop', iabLoadStop);
-        iabRef.addEventListener('exit', iabClose);
-		e.preventDefault();
-	});
-	
-	function iabClose(event) {
-         iabRef.removeEventListener('loadstop', iabLoadStop);
-         iabRef.removeEventListener('exit', iabClose);
-    }
-	
-	function iabLoadStop(event) {
-			var curr = event.url;
-			var p1 = "disqus.com/next/login-success";
-			var p2 = "disqus.com/_ax/google/complete";
-			var p3 = "disqus.com/_ax/twitter/complete";
-			var p4 = "disqus.com/_ax/facebook/complete";
-			
-			if (event.url == "http://lifeasasister.org/wp-content/themes/imagine/mobile-app/closeInAppBrowser.html") {iabRef.close();}
-			else if (curr.indexOf(p1) != -1 || curr.indexOf(p2) != -1 || curr.indexOf(p3) != -1 || curr.indexOf(p4) != -1) { 	
-				iabRef = window.open(url, '_blank', 'location=no,closebuttoncaption=Close Window');
-			}
-    }
-
-
-});
-
-*/
-/* end facebook post */
-
-
-
-
 // track page views
 myApp.onPageInit('*', function (page) {
 	$$('a.track').on('click', function (e) {
@@ -106,9 +56,6 @@ myApp.onPageInit('*', function (page) {
 		ga('send', 'pageview', url);
 	});
 });
-
-
-
 
 
 // infinite scroll posts.
