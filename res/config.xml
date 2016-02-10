@@ -9,5 +9,7 @@
 		<param name="android-package" value="nl.xservices.plugins.SocialSharing" />
 	</feature>
 	
+	  <access origin="*" />
+	
 </widget>	
 	
