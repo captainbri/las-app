@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.lifeasasister.app" version="2.01" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="org.lifeasasister.app" version="2.02" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Imagine a Sister's Life</name>
     <description>Spend time on our app journeying with some amazing religious women. Explore resources to help you discover your calling in life!</description>
    <author email="captainbri@gmail.com" href="http://lifeasasister.org">Sisters of Bon Secours USA</author>
     <preference name="permissions" value="none" />
-    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
