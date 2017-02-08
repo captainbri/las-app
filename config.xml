@@ -36,9 +36,10 @@
 	<plugin name="cordova-plugin-media" spec="https://github.com/apache/cordova-plugin-media.git" />
 	<plugin name="cordova-plugin-network-information" spec="https://github.com/apache/cordova-plugin-network-information.git" />
 	 <plugin name="cordova-plugin-splashscreen" spec="https://github.com/apache/cordova-plugin-splashscreen.git" />
+	 <plugin name="cordova-plugin-whitelist" spec="https://github.com/apache/cordova-plugin-whitelist.git" />
  
 	
-	<gap:plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+
 	
 	
 	<gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
