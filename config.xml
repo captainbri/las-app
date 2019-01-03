@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.lifeasasister.app" version="2.02" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="org.lifeasasister.app" version="2.03" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Imagine a Sister's Life</name>
     <description>Spend time on our app journeying with some amazing religious women. Explore resources to help you discover your calling in life!</description>
    <author email="captainbri@gmail.com" href="http://lifeasasister.org">Sisters of Bon Secours USA</author>
@@ -23,7 +23,7 @@
 	<plugin name="cordova-plugin-camera" spec="https://github.com/apache/cordova-plugin-camera.git" />
 	<plugin name="cordova-plugin-media-capture" spec="https://github.com/apache/cordova-plugin-media-capture.git" />
 	<plugin name="cordova-plugin-console" spec="https://github.com/apache/cordova-plugin-console.git" />
-	<plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" />
+	<!--<plugin name="cordova-plugin-contacts" spec="https://github.com/apache/cordova-plugin-contacts.git" />-->
 	<plugin name="cordova-plugin-device" spec="https://github.com/apache/cordova-plugin-device.git" />
 	<plugin name="cordova-plugin-device-motion" spec="https://github.com/apache/cordova-plugin-device-motion.git" />
 	<plugin name="cordova-plugin-device-orientation" spec="https://github.com/apache/cordova-plugin-device-orientation.git" />
